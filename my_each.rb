@@ -6,3 +6,9 @@ def my_each(array)
   end
   array 
 end
+
+my_each(["lily", "nolan", "mama"]) do |name|
+  if name.start_with?("l")
+    puts "Hi, #{name}"
+  end
+end
